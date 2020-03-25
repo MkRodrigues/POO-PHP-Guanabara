@@ -1,24 +1,29 @@
 <?php
 
+//Diferente de java, em php não é necessário explicitar que o método é um método abstrato, 
+//escrevendo a palavra à frente do nome do método.
+//Pois a Interface já se trata de uma classe abstrata e portanto seus métodos também serão.
+// Ex. incorreto:  public abstract function pause();
+
 interface Controlador {
 
-    public abstract function ligar();
+    public function ligar();
 
-    public abstract function desligar();
+    public function desligar();
 
-    public abstract function abrirMenu();
+    public function abrirMenu();
 
-    public abstract function fecharMenu();
+    public function fecharMenu();
 
-    public abstract function maisVolume();
+    public function maisVolume();
 
-    public abstract function menosVolume();
+    public function menosVolume();
 
-    public abstract function ligarMudo();
+    public function ligarMudo();
 
-    public abstract function desligarMudo();
+    public function desligarMudo();
 
-    public abstract function play();
+    public function play();
 
-    public abstract function pause();
+    public function pause();
 }
